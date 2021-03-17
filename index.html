@@ -1,1 +1,40 @@
-Hello World, we are software developers!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Microverse Trial Survey Form</title>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fitno">
+  <link rel="stylesheet" type="text/css" href="css/styles.css" media="screen"/>
+</head>
+<body>
+    <h1 id="title">Microverse Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+        <div class="form-group">
+            <label id="name-label" for="name">Name</label>
+            <input id="name" type="text" name="name" class="form-control" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input id="email" type="email" name="email" class="form-control" placeholder="Enter your Email" required>
+        </div>
+        <div class="form-control">
+            <label id="number-label" for="age">Age <span class="clue">(Optional)</span></label>
+            <input id="age" type="number" min="10" max="99" name="age" class="form-control" placeholder="Age">
+        </div>
+        <div class="form-control">
+            <label id="dropdown-label" for="dropdown">Which option best describes your current role?</p>
+            <select id="dropdown" name="role" class="form-control" required>
+                <option disabled selected value>Select current role</option>
+                <option value="student">Student</option>
+                <option value="job">Full time job</option>
+                <option value="learner">Full Time Learner</option>
+                <option value="preferNo">Prefer not to say</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+
+    </form>
+ 
+</body>
+</html>
